@@ -58,3 +58,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE VGA_controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE hexdriver.sv
 set_global_assignment -name SYSTEMVERILOG_FILE font_rom.sv
 set_global_assignment -name SYSTEMVERILOG_FILE top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fruit.sv
