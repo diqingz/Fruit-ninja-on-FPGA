@@ -27,6 +27,8 @@ Game ends when a certain amount of missed fruits on the screen or bomb is presse
 #### 7. The alignment of the keycodes and the assigned fruits/bombs. 
 The alignment ensures that depending on the keycode pressed by the user will dictate if a certain fruit or bomb will be removed. 
 
+
+
 ### Additional Features
 
 #### 1. The amount of lives that the user has until the game will end. 
