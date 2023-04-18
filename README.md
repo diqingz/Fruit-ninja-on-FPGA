@@ -26,3 +26,26 @@ Game ends when a certain amount of missed fruits on the screen or bomb is presse
 
 #### 7. The alignment of the keycodes and the assigned fruits/bombs. 
 The alignment ensures that depending on the keycode pressed by the user will dictate if a certain fruit or bomb will be removed. 
+
+### Additional Features
+
+#### 1. The amount of lives that the user has until the game will end. 
+There will be three lives that the user starts with at the beginning of the game and will decrease as a penalty has been made. The amount of the lives will be displayed on the corner of the VGA screen.
+
+#### 2. A leaderboard in which it will be displayed on the VGA display with the help of font rom.
+This will allow the user to keep know their final score. Additionally it will remove the constraint of the score that can be displayed. 
+
+#### 3. The ability of changing the input interface of the game from a wired keyboard to a mouse. 
+The mouse would remove the keycodes on the screen and instead consist of a slicing mechanism.
+
+#### 4. An animation when the keycodes of the wired keyboard align with the fruit or bomb.
+For instance, if the keycode matched the fruits assigned keycode then the fruit would either explode or slice in half.
+
+#### 5. The ability of getting bonus points for destroying multiple fruits on the same slice.
+In the original Fruit Ninja more points are rewarded if the user slices multiple fruits in one go. Therefore, a bonus points system will be set up. 
+
+#### 6. Sound for the game to have when the fruits are sliced and when the bomb is sliced.
+The ability to add sound is unknown to us, however, if the project is moving at a great pace then we could learn how we can implement sounds to the game. 
+
+#### 7. A main menu in which it will be displayed on the VGA display with the help of font rom.
+This will allow the originally mentioned start process of the push button on the FPGA to be instead interactive with the VGA display. The main menu will primarily consist of start, scoreboard, set difficulty. 
