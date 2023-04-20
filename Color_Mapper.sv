@@ -23,7 +23,7 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
 	 assign DistX = DrawX - FruitX;
     assign DistY = DrawY - FruitY;
     assign Size = Fruit_size;
-	  
+	///For apple  
     always_comb
     begin:Fruit_on_proc
         if ((DistX < Fruit_size) && (DistY < Fruit_size)) 
@@ -31,7 +31,9 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
         else 
             Fruit_on = 1'b0;
      end 
-       
+      
+		
+		
     always_comb
     begin:RGB_Display
         if ((Fruit_on == 1'b1)) 
