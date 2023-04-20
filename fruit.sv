@@ -31,45 +31,77 @@ module  fruit( input Reset, frame_clk,
 		  else
 		  begin
 		  
-			if(newfruit)//if create new fruit on
+			if(new_fruit)//if create new fruit on
 			begin
 			//Set to random values
-				Fruit_Y_Pos <= 0;
+				Fruit_Y_Pos <= Fruit_Y_Max;
 				Fruit_X_Pos <= //random
 				//Set color to fruit color
-				Fruit_X_Motion = //random
+				Fruit_X_Motion = //random NEG
 				Fruit_Y_Motion = //random
 			end
+			else if (move_fruit) begin
+				
+				// set fruit movement speed (number to add)
+				if (number_of_fruits_cut <= 3)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 1;
+				
+				else if (number_of_fruits_cut > 3 && number_of_fruits_cut <= 6)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 2;
+				
+				else if (number_of_fruits_cut > 6 && number_of_fruits_cut <= 10)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 3;
+					
+				else if (number_of_fruits_cut > 10 && number_of_fruits_cut <= 15)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 4;
+					
+				else if (number_of_fruits_cut > 15 && number_of_fruits_cut <= 20)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 5;
+					
+				else if (number_of_fruits_cut > 20 && number_of_fruits_cut <= 25)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 6;
+					
+				else if (number_of_fruits_cut > 25 && number_of_fruits_cut <= 30)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 7;
+					
+				else if (number_of_fruits_cut > 30 && number_of_fruits_cut <= 35)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 8;
+					
+				else if (number_of_fruits_cut > 35 && number_of_fruits_cut <= 40)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 9;
+					
+				else if (number_of_fruits_cut > 40 && number_of_fruits_cut <= 45)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 10;
+					
+				else if (number_of_fruits_cut > 45 && number_of_fruits_cut <= 50)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 11;
+					
+				else if (number_of_fruits_cut > 50 && number_of_fruits_cut <= 55)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 12;
+					
+				else if (number_of_fruits_cut > 55 && number_of_fruits_cut <= 69)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 13;
+					
+				else if (number_of_fruits_cut > 69)
+					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 15;
+					
+			end //else if
 			
-			else
-			begin
-		  /// Fruit dropping if reaches midpoint
-//				if(Fruit_X_Pos ==((Fruit_X_Max - 2*(Fruit_init - Fruit_X_Min))/2+Fruit_init - Fruit_X_Min))
-				Fruit_Y_Motion <= Fruit_Y_Motion + Fruit_Y_Acceleration; // Changes velocity given accleration
-				Fruit_Y_Pos = Fruit_Y_Motion + Fruit_Y_Pos;//updating the position
-				Fruit_X_Pos = Fruit_X_Motion + Fruit_X_Pos;
-			end
+//			else
+//			begin
+//		  /// Fruit dropping if reaches midpoint
+////				if(Fruit_X_Pos ==((Fruit_X_Max - 2*(Fruit_init - Fruit_X_Min))/2+Fruit_init - Fruit_X_Min))
+//				Fruit_Y_Motion <= Fruit_Y_Motion + Fruit_Y_Acceleration; // Changes velocity given accleration
+////				Fruit_Y_Pos = Fruit_Y_Motion + Fruit_Y_Pos;//updating the position
+////				Fruit_X_Pos = Fruit_X_Motion + Fruit_X_Pos;
+//			end
 		  end
-//        else 
-//        begin 
-//				 if ( (Fruit_Y_Pos + Fruit_Size) >= Fruit_Y_Max )  // Ball is at the bottom edge, BOUNCE!
-//					  Fruit_Y_Motion <= (~ (Fruit_Y_Step) + 1'b1);  // 2's complement.
-//					  
-//				 else if ( (Fruit_Y_Pos - Fruit_Size) <= Fruit_Y_Min )  // Ball is at the top edge, BOUNCE!
-//					  Fruit_Y_Motion <= Fruit_Y_Step;
-//					  
-//				  else if ( (Fruit_X_Pos + Fruit_Size) >= Fruit_X_Max )  // Ball is at the Right edge, BOUNCE!
-//					  Fruit_X_Motion <= (~ (Fruit_X_Step) + 1'b1);  // 2's complement.
-//					  
-//				 else if ( (Fruit_X_Pos - Fruit_Size) <= Fruit_X_Min )  // Ball is at the Left edge, BOUNCE!
-//					  Fruit_X_Motion <= Fruit_X_Step;
-					  
-//			else  
+
 
   
 					default: ;
 			   endcase
-				 
+				 Fruit_Y_Motion <= Fruit_Y_Motion + Fruit_Y_Acceleration; // Changes velocity given accleration
 				 Fruit_Y_Pos <= (Fruit_Y_Pos + Fruit_Y_Motion);  // Update ball position
 				 Fruit_X_Pos <= (Fruit_X_Pos + Fruit_X_Motion);
 			
