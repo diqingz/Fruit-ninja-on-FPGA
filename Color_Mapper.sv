@@ -41,7 +41,7 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
             Red = 8'hff;
             Green = 8'h55;
             Blue = 8'h00;
-				///Color of Apple
+				///Draw apple here
         end  
 		  
         else if (Melon_on ==1'b1) //melon on, paint melon
