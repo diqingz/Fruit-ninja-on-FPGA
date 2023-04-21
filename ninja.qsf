@@ -54,7 +54,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name QIP_FILE background/background.qip
 set_global_assignment -name QIP_FILE apple/apple.qip
 set_global_assignment -name QIP_FILE final/synthesis/final.qip
-set_global_assignment -name QSYS_FILE final.qsys
 set_global_assignment -name SYSTEMVERILOG_FILE Color_Mapper.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE hexdriver.sv

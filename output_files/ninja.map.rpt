@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ninja
-Thu Apr 20 20:40:14 2023
+Thu Apr 20 20:48:40 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Apr 20 20:40:14 2023           ;
+; Analysis & Synthesis Status        ; Failed - Thu Apr 20 20:48:40 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
@@ -164,47 +164,47 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 20 20:39:29 2023
+    Info: Processing started: Thu Apr 20 20:47:46 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fruit_ninja -c ninja
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12248): Elaborating Platform Designer system entity "final.qsys"
-Info (12250): 2023.04.20.20:39:42 Progress: Loading Fruit-ninja-on-FPGA/final.qsys
-Info (12250): 2023.04.20.20:39:43 Progress: Reading input file
-Info (12250): 2023.04.20.20:39:43 Progress: Adding RESET [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:43 Progress: Parameterizing module RESET
-Info (12250): 2023.04.20.20:39:43 Progress: Adding SDRAM [altera_avalon_new_sdram_controller 18.1]
-Info (12250): 2023.04.20.20:39:43 Progress: Parameterizing module SDRAM
-Info (12250): 2023.04.20.20:39:43 Progress: Adding START [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:43 Progress: Parameterizing module START
-Info (12250): 2023.04.20.20:39:43 Progress: Adding clk_0 [clock_source 18.1]
-Info (12250): 2023.04.20.20:39:44 Progress: Parameterizing module clk_0
-Info (12250): 2023.04.20.20:39:44 Progress: Adding hex_digits_pio [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:44 Progress: Parameterizing module hex_digits_pio
-Info (12250): 2023.04.20.20:39:44 Progress: Adding keycode [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:44 Progress: Parameterizing module keycode
-Info (12250): 2023.04.20.20:39:44 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
-Info (12250): 2023.04.20.20:39:44 Progress: Parameterizing module nios2_gen2_0
-Info (12250): 2023.04.20.20:39:44 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
-Info (12250): 2023.04.20.20:39:44 Progress: Parameterizing module onchip_memory2_0
-Info (12250): 2023.04.20.20:39:44 Progress: Adding sdram_pll [altpll 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module sdram_pll
-Info (12250): 2023.04.20.20:39:45 Progress: Adding spi_0 [altera_avalon_spi 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module spi_0
-Info (12250): 2023.04.20.20:39:45 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module sysid_qsys_0
-Info (12250): 2023.04.20.20:39:45 Progress: Adding timer_0 [altera_avalon_timer 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module timer_0
-Info (12250): 2023.04.20.20:39:45 Progress: Adding usb_gpx [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module usb_gpx
-Info (12250): 2023.04.20.20:39:45 Progress: Adding usb_irq [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module usb_irq
-Info (12250): 2023.04.20.20:39:45 Progress: Adding usb_rst [altera_avalon_pio 18.1]
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing module usb_rst
-Info (12250): 2023.04.20.20:39:45 Progress: Building connections
-Info (12250): 2023.04.20.20:39:45 Progress: Parameterizing connections
-Info (12250): 2023.04.20.20:39:45 Progress: Validating
-Info (12250): 2023.04.20.20:39:46 Progress: Done reading input file
+Info (12250): 2023.04.20.20:48:02 Progress: Loading Fruit-ninja-on-FPGA/final.qsys
+Info (12250): 2023.04.20.20:48:03 Progress: Reading input file
+Info (12250): 2023.04.20.20:48:03 Progress: Adding RESET [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:03 Progress: Parameterizing module RESET
+Info (12250): 2023.04.20.20:48:03 Progress: Adding SDRAM [altera_avalon_new_sdram_controller 18.1]
+Info (12250): 2023.04.20.20:48:03 Progress: Parameterizing module SDRAM
+Info (12250): 2023.04.20.20:48:03 Progress: Adding START [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:03 Progress: Parameterizing module START
+Info (12250): 2023.04.20.20:48:03 Progress: Adding clk_0 [clock_source 18.1]
+Info (12250): 2023.04.20.20:48:04 Progress: Parameterizing module clk_0
+Info (12250): 2023.04.20.20:48:04 Progress: Adding hex_digits_pio [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:04 Progress: Parameterizing module hex_digits_pio
+Info (12250): 2023.04.20.20:48:04 Progress: Adding keycode [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:04 Progress: Parameterizing module keycode
+Info (12250): 2023.04.20.20:48:04 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Info (12250): 2023.04.20.20:48:04 Progress: Parameterizing module nios2_gen2_0
+Info (12250): 2023.04.20.20:48:04 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Info (12250): 2023.04.20.20:48:04 Progress: Parameterizing module onchip_memory2_0
+Info (12250): 2023.04.20.20:48:04 Progress: Adding sdram_pll [altpll 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module sdram_pll
+Info (12250): 2023.04.20.20:48:05 Progress: Adding spi_0 [altera_avalon_spi 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module spi_0
+Info (12250): 2023.04.20.20:48:05 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module sysid_qsys_0
+Info (12250): 2023.04.20.20:48:05 Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module timer_0
+Info (12250): 2023.04.20.20:48:05 Progress: Adding usb_gpx [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module usb_gpx
+Info (12250): 2023.04.20.20:48:05 Progress: Adding usb_irq [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module usb_irq
+Info (12250): 2023.04.20.20:48:05 Progress: Adding usb_rst [altera_avalon_pio 18.1]
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing module usb_rst
+Info (12250): 2023.04.20.20:48:05 Progress: Building connections
+Info (12250): 2023.04.20.20:48:05 Progress: Parameterizing connections
+Info (12250): 2023.04.20.20:48:05 Progress: Validating
+Info (12250): 2023.04.20.20:48:06 Progress: Done reading input file
 Info (12250): Final.RESET: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Final.SDRAM: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info (12250): Final.START: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
@@ -218,38 +218,38 @@ Info (12250): Inserting clock-crossing logic between cmd_demux_001.src4 and cmd_
 Info (12250): Inserting clock-crossing logic between rsp_demux_004.src0 and rsp_mux.sink4
 Info (12250): Inserting clock-crossing logic between rsp_demux_004.src1 and rsp_mux_001.sink4
 Info (12250): RESET: Starting RTL generation for module 'final_RESET'
-Info (12250): RESET:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_RESET --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0002_RESET_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0002_RESET_gen//final_RESET_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): RESET:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_RESET --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0002_RESET_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0002_RESET_gen//final_RESET_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): RESET: Done RTL generation for module 'final_RESET'
 Info (12250): RESET: "final" instantiated altera_avalon_pio "RESET"
 Info (12250): SDRAM: Starting RTL generation for module 'final_SDRAM'
-Info (12250): SDRAM:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=final_SDRAM --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0003_SDRAM_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0003_SDRAM_gen//final_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): SDRAM:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=final_SDRAM --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0003_SDRAM_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0003_SDRAM_gen//final_SDRAM_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): SDRAM: Done RTL generation for module 'final_SDRAM'
 Info (12250): SDRAM: "final" instantiated altera_avalon_new_sdram_controller "SDRAM"
 Info (12250): Hex_digits_pio: Starting RTL generation for module 'final_hex_digits_pio'
-Info (12250): Hex_digits_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_hex_digits_pio --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0004_hex_digits_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0004_hex_digits_pio_gen//final_hex_digits_pio_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Hex_digits_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_hex_digits_pio --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0004_hex_digits_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0004_hex_digits_pio_gen//final_hex_digits_pio_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Hex_digits_pio: Done RTL generation for module 'final_hex_digits_pio'
 Info (12250): Hex_digits_pio: "final" instantiated altera_avalon_pio "hex_digits_pio"
 Info (12250): Keycode: Starting RTL generation for module 'final_keycode'
-Info (12250): Keycode:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_keycode --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0005_keycode_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0005_keycode_gen//final_keycode_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Keycode:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_keycode --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0005_keycode_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0005_keycode_gen//final_keycode_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Keycode: Done RTL generation for module 'final_keycode'
 Info (12250): Keycode: "final" instantiated altera_avalon_pio "keycode"
 Info (12250): Nios2_gen2_0: "final" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info (12250): Onchip_memory2_0: Starting RTL generation for module 'final_onchip_memory2_0'
-Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=final_onchip_memory2_0 --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0006_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0006_onchip_memory2_0_gen//final_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=final_onchip_memory2_0 --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0006_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0006_onchip_memory2_0_gen//final_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Onchip_memory2_0: Done RTL generation for module 'final_onchip_memory2_0'
 Info (12250): Onchip_memory2_0: "final" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info (12250): Sdram_pll: "final" instantiated altpll "sdram_pll"
 Info (12250): Spi_0: Starting RTL generation for module 'final_spi_0'
-Info (12250): Spi_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=final_spi_0 --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0009_spi_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0009_spi_0_gen//final_spi_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Spi_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=final_spi_0 --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0009_spi_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0009_spi_0_gen//final_spi_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Spi_0: Done RTL generation for module 'final_spi_0'
 Info (12250): Spi_0: "final" instantiated altera_avalon_spi "spi_0"
 Info (12250): Sysid_qsys_0: "final" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
 Info (12250): Timer_0: Starting RTL generation for module 'final_timer_0'
-Info (12250): Timer_0:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=final_timer_0 --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0011_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0011_timer_0_gen//final_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Timer_0:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=final_timer_0 --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0011_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0011_timer_0_gen//final_timer_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Timer_0: Done RTL generation for module 'final_timer_0'
 Info (12250): Timer_0: "final" instantiated altera_avalon_timer "timer_0"
 Info (12250): Usb_rst: Starting RTL generation for module 'final_usb_rst'
-Info (12250): Usb_rst:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_usb_rst --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0012_usb_rst_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0012_usb_rst_gen//final_usb_rst_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Usb_rst:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=final_usb_rst --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0012_usb_rst_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0012_usb_rst_gen//final_usb_rst_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Usb_rst: Done RTL generation for module 'final_usb_rst'
 Info (12250): Usb_rst: "final" instantiated altera_avalon_pio "usb_rst"
 Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -270,19 +270,19 @@ Info (12250): Mm_interconnect_0: "final" instantiated altera_mm_interconnect "mm
 Info (12250): Irq_mapper: "final" instantiated altera_irq_mapper "irq_mapper"
 Info (12250): Rst_controller: "final" instantiated altera_reset_controller "rst_controller"
 Info (12250): Cpu: Starting RTL generation for module 'final_nios2_gen2_0_cpu'
-Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=final_nios2_gen2_0_cpu --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0015_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_7755789276585243688.dir/0015_cpu_gen//final_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*) Starting Nios II generation
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   Checking for plaintext license.
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   LM_LICENSE_FILE environment variable is empty
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   Plaintext license not found.
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   No license required to generate encrypted Nios II/e.
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   Elaborating CPU configuration settings
-Info (12250): Cpu: # 2023.04.20 20:40:09 (*)   Creating all objects for CPU
-Info (12250): Cpu: # 2023.04.20 20:40:10 (*)   Generating RTL from CPU objects
-Info (12250): Cpu: # 2023.04.20 20:40:10 (*)   Creating plain-text RTL
-Info (12250): Cpu: # 2023.04.20 20:40:11 (*) Done Nios II generation
+Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=final_nios2_gen2_0_cpu --dir=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0015_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/sz_ol/AppData/Local/Temp/alt9468_8670534805548529720.dir/0015_cpu_gen//final_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*) Starting Nios II generation
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2023.04.20 20:48:34 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2023.04.20 20:48:35 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2023.04.20 20:48:35 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2023.04.20 20:48:36 (*) Done Nios II generation
 Info (12250): Cpu: Done RTL generation for module 'final_nios2_gen2_0_cpu'
 Info (12250): Cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info (12250): Nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -461,38 +461,19 @@ Info (12021): Found 2 design units, including 2 entities, in source file final/s
     Info (12023): Found entity 2: final_SDRAM File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_SDRAM.v Line: 159
 Info (12021): Found 1 design units, including 1 entities, in source file final/synthesis/submodules/final_reset.v
     Info (12023): Found entity 1: final_RESET File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_RESET.v Line: 21
-Error (10170): Verilog HDL syntax error at Color_Mapper.sv(23) near text: "unsigned";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/Color_Mapper.sv Line: 23
-Error (10112): Ignored design unit "color_mapper" at Color_Mapper.sv(16) due to previous errors File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/Color_Mapper.sv Line: 16
-Info (12021): Found 0 design units, including 0 entities, in source file color_mapper.sv
+Info (12021): Found 1 design units, including 1 entities, in source file color_mapper.sv
+    Info (12023): Found entity 1: color_mapper File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/Color_Mapper.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
     Info (12023): Found entity 1: vga_controller File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/VGA_controller.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
     Info (12023): Found entity 1: HexDriver File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/hexdriver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file font_rom.sv
     Info (12023): Found entity 1: font_rom File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/font_rom.sv Line: 1
-Error (10134): Verilog HDL Module Declaration error at top.sv(57): port "MAX10_CLK1_50" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 57
-Error (10170): Verilog HDL syntax error at top.sv(60) near text: "input";  expecting an identifier ("input" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 60
-Error (10134): Verilog HDL Module Declaration error at top.sv(60): port "KEY" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 60
-Error (10170): Verilog HDL syntax error at top.sv(63) near text: "input";  expecting an identifier ("input" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 63
-Error (10134): Verilog HDL Module Declaration error at top.sv(63): port "SW" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 63
-Error (10170): Verilog HDL syntax error at top.sv(66) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 66
-Error (10134): Verilog HDL Module Declaration error at top.sv(66): port "LEDR" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 66
-Error (10170): Verilog HDL syntax error at top.sv(69) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 69
-Error (10134): Verilog HDL Module Declaration error at top.sv(69): port "HEX0" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 69
-Error (10170): Verilog HDL syntax error at top.sv(70) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 70
-Error (10134): Verilog HDL Module Declaration error at top.sv(70): port "HEX1" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 70
-Error (10170): Verilog HDL syntax error at top.sv(71) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 71
-Error (10134): Verilog HDL Module Declaration error at top.sv(71): port "HEX2" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 71
-Error (10170): Verilog HDL syntax error at top.sv(72) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 72
-Error (10134): Verilog HDL Module Declaration error at top.sv(72): port "HEX3" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 72
-Error (10170): Verilog HDL syntax error at top.sv(73) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 73
-Error (10134): Verilog HDL Module Declaration error at top.sv(73): port "HEX4" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 73
-Error (10170): Verilog HDL syntax error at top.sv(74) near text: "output";  expecting an identifier ("output" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 74
-Error (10134): Verilog HDL Module Declaration error at top.sv(74): port "HEX5" is declared more than once File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 74
-Info (12021): Found 0 design units, including 0 entities, in source file top.sv
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 1
 Error (10170): Verilog HDL syntax error at fruit.sv(40) near text: "=";  expecting "++", or "--". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 40
-Error (10170): Verilog HDL syntax error at fruit.sv(102) near text: "default";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 102
-Error (10170): Verilog HDL syntax error at fruit.sv(110) near text: "end"; "end" without "begin" . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 110
+Error (10170): Verilog HDL syntax error at fruit.sv(42) near text: "end";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 42
+Error (10170): Verilog HDL syntax error at fruit.sv(107) near text: "end"; "end" without "begin" . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 107
 Error (10112): Ignored design unit "fruit" at fruit.sv(2) due to previous errors File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 2
 Info (12021): Found 0 design units, including 0 entities, in source file fruit.sv
 Info (15248): File "c:/users/sz_ol/desktop/mandukie/college/1-sp23/ece385/1111- final/fruit-ninja-on-fpga/db/ip/final/final.v" is a duplicate of already analyzed file "C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/final.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
@@ -603,11 +584,11 @@ Info (12021): Found 0 design units, including 0 entities, in source file db/ip/f
 Info (15248): File "c:/users/sz_ol/desktop/mandukie/college/1-sp23/ece385/1111- final/fruit-ninja-on-fpga/db/ip/final/submodules/final_usb_rst.v" is a duplicate of already analyzed file "C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_usb_rst.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
 Info (12021): Found 0 design units, including 0 entities, in source file db/ip/final/submodules/final_usb_rst.v
 Info (144001): Generated suppressed messages file C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/output_files/ninja.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 26 errors, 2 warnings
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 2 warnings
     Error: Peak virtual memory: 4737 megabytes
-    Error: Processing ended: Thu Apr 20 20:40:15 2023
-    Error: Elapsed time: 00:00:46
-    Error: Total CPU time (on all processors): 00:00:34
+    Error: Processing ended: Thu Apr 20 20:48:41 2023
+    Error: Elapsed time: 00:00:55
+    Error: Total CPU time (on all processors): 00:00:43
 
 
 +------------------------------------------+

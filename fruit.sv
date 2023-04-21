@@ -37,8 +37,8 @@ module  fruit( input Reset, frame_clk,
 				Fruit_Y_Pos <= Fruit_Y_Max;
 				Fruit_X_Pos <= //random
 				//Set color to fruit color
-				Fruit_X_Motion = 1//random NEG
-				Fruit_Y_Motion = 1//random
+				Fruit_X_Motion = 1;//random NEG
+				Fruit_Y_Motion = 1;//random
 			end
 			else if (move_fruit) begin
 				
