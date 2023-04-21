@@ -1,5 +1,5 @@
 Flow report for ninja
-Thu Apr 20 21:38:34 2023
+Thu Apr 20 23:32:45 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,24 +40,24 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu Apr 20 21:38:34 2023      ;
+; Flow Status                        ; Assembler Failed - Thu Apr 20 23:32:45 2023 ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DCF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 3,566 / 49,760 ( 7 % )                      ;
+;     Total combinational functions  ; 3,003 / 49,760 ( 6 % )                      ;
+;     Dedicated logic registers      ; 2,244 / 49,760 ( 5 % )                      ;
+; Total registers                    ; 2313                                        ;
+; Total pins                         ; 141 / 360 ( 39 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 43,008 / 1,677,312 ( 3 % )                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/20/2023 21:38:22 ;
+; Start date & time ; 04/20/2023 23:31:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ninja               ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264562646138663.168204470104288                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264562646138663.168205149901628                         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                       ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                         ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                    ; --            ; --          ; eda_simulation ;
@@ -105,8 +105,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4733 MB             ; 00:00:05                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 5301 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:28     ; 1.3                     ; 5987 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4697 MB             ; 00:00:02                           ;
+; Total                ; 00:01:00     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +118,8 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -123,6 +127,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off fruit_ninja -c ninja
+quartus_fit --read_settings_files=off --write_settings_files=off fruit_ninja -c ninja
+quartus_asm --read_settings_files=off --write_settings_files=off fruit_ninja -c ninja
 
 
 

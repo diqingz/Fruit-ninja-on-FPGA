@@ -6,7 +6,7 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element RESET
@@ -75,6 +75,11 @@
    }
    element hex_digits_pio.s1
    {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
       datum baseAddress
       {
          value = "8512";
@@ -185,6 +190,14 @@
          type = "int";
       }
    }
+   element timer_0.reset
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
    element timer_0.s1
    {
       datum baseAddress
@@ -255,7 +268,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="fruit_ninja.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />

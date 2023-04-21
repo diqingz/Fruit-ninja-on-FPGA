@@ -121,13 +121,14 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 ///////////!!!!!!!!!!!Change to [4:0]?
 	
 	
-	lab6_2soc u0 (
+final_proj u0 (
 		.clk_clk                           (MAX10_CLK1_50),  //clk.clk
 		.reset_reset_n                     (1'b1),           //reset.reset_n
 		.altpll_0_locked_conduit_export    (),               //altpll_0_locked_conduit.export
 		.altpll_0_phasedone_conduit_export (),               //altpll_0_phasedone_conduit.export
 		.altpll_0_areset_conduit_export    (),               //altpll_0_areset_conduit.export
-		.key_external_connections_export    (KEY),            //key_external_connection.export
+		.key0_wire_export    (KEY[0]), 
+		.key1_wire_export		(KEY[1]),//key_external_connection.export
 
 		//SDRAM
 		.sdram_clk_clk(DRAM_CLK),                            //clk_sdram.clk
@@ -154,7 +155,7 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 		
 		//LEDs and HEX
 		.hex_digits_export({hex_num_4, hex_num_3, hex_num_1, hex_num_0}),
-		.leds_export({hundreds, signs, LEDR}),
+//		.leds_export({hundreds, signs, LEDR}),
 		.keycode_export(keycode)
 		
 	 );
@@ -206,7 +207,7 @@ background_example background (
 		.blue(BKG_B)
 );
 
-Color_Mapper Color_Mapper(
+color_mapper Color_Mapper(
 		//INPUTS: general
 		.FruitX(fruitxsig),
 		.FruitY(fruitysig),

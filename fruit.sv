@@ -16,6 +16,12 @@ module  fruit( input Reset, frame_clk,
     assign Fruit_Size = 10;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
 	 //Should be changed later if creating different fruits!!!!
    
+	////////////////////HARD WIRE//////////////////////////////
+	logic new_fruit= 1;
+	logic move_fruit = 1;
+	logic  number_of_fruits_cut = 1;
+	//////////////////////////////////////////////////////////
+	
 	
 //Instantiate lfsr for random numbers
 random_num random1(.clk(frame_clk), 
@@ -107,11 +113,11 @@ random_num random1(.clk(frame_clk),
 		end  
 
        
-    assign FruitX = Fruit_X_Pos;
+    assign fruitX = Fruit_X_Pos;
    
-    assign FruitY = Fruit_Y_Pos;
+    assign fruitY = Fruit_Y_Pos;
    
-    assign FruitS = Fruit_Size;
+    assign fruitS = Fruit_Size;
     
 
 endmodule

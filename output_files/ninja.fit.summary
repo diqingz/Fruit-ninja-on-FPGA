@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Apr 20 23:32:40 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : ninja
+Top-level Entity Name : top
+Family : MAX 10
+Device : 10M50DCF484C7G
+Timing Models : Final
+Total logic elements : 3,566 / 49,760 ( 7 % )
+    Total combinational functions : 3,003 / 49,760 ( 6 % )
+    Dedicated logic registers : 2,244 / 49,760 ( 5 % )
+Total registers : 2313
+Total pins : 141 / 360 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 43,008 / 1,677,312 ( 3 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0
