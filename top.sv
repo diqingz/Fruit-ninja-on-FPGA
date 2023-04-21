@@ -176,25 +176,25 @@ vga_controller VGA( .Clk(MAX10_CLK1_50),       // 50 MHz clock
 					  .DrawX(drawxsig),     // horizontal coordinate
 					  .DrawY(drawysig) );
 	 
-	 //FRUIT.SV
-fruit fruit(
-		.Reset(Reset_h),
-		.frame_clk(VGA_HS),
-		.fruitX(fruitxsig),
-		.fruitY(fruitysig), 
-		.fruitS(fruitsizesig) );
-	 
-	 
-	//FRUITS
-apple_example apple(
-		.vga_clk(VGA_Clk),
-		.DrawX(drawxsig), 
-		.DrawY(drawysig),
-		.blank(blank),
-		.red(apple_R),
-		.green(apple_G),
-		.blue(apple_B)
-);
+//	 //FRUIT.SV
+//fruit fruit(
+//		.Reset(Reset_h),
+//		.frame_clk(VGA_HS),
+//		.fruitX(fruitxsig),
+//		.fruitY(fruitysig), 
+//		.fruitS(fruitsizesig) );
+//	 
+//	 
+//	//FRUITS
+//apple_example apple(
+//		.vga_clk(VGA_Clk),
+//		.DrawX(drawxsig), 
+//		.DrawY(drawysig),
+//		.blank(blank),
+//		.red(apple_R),
+//		.green(apple_G),
+//		.blue(apple_B)
+//);
 
 	//BKG
 background_example background (
@@ -209,15 +209,9 @@ background_example background (
 
 color_mapper Color_Mapper(
 		//INPUTS: general
-		.FruitX(fruitxsig),
-		.FruitY(fruitysig),
 		.DrawX(drawxsig),
 		.DrawY(drawysig),
-		.Fruit_size(fruitsizesig),
 		//INPUTS for fruits,bomb and background
-		.apple_R(apple_R),
-		.apple_G(apple_G),
-		.apple_B(apple_B),
 		.BKG_R(BKG_R),
 		.BKG_G(BKG_G), 
 		.BKG_B(BKG_B),

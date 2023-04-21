@@ -256,6 +256,8 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -entity DE10_LITE_Default -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_LITE_Default -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name QIP_FILE peach/peach.qip
+set_global_assignment -name MIF_FILE peach/peach.mif
 set_global_assignment -name MIF_FILE apple/apple.mif
 set_global_assignment -name QIP_FILE background/background.qip
 set_global_assignment -name QIP_FILE apple/apple.qip

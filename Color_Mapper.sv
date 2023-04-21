@@ -13,26 +13,84 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_size,
-							  input 			[3:0] apple_R, apple_G, apple_B,BKG_R, BKG_G, BKG_B,
+module  color_mapper( input         [9:0]  DrawX, DrawY,
+							  input 			[3:0] BKG_R, BKG_G, BKG_B,
                        output logic [7:0]  Red, Green, Blue );
     
-    logic Fruit_on;
+    logic Fruit_on,Peach_on;
 
-    logic[9:0] DistX, DistY, Size;
-	 assign DistX = DrawX - FruitX;
-    assign DistY = DrawY - FruitY;
-    assign Size = Fruit_size;
+	 	 
+	 //Instantiations and assignments
+	 
+	 //Apple
+	 logic [3:0] apple_R, apple_G, apple_B;
+	 logic [9:0] applexsig,appleysig,applesizesig;
+	 logic [9:0] DistX_apple, DistY_apple;
+	 assign DistX_apple = DrawX - applexsig;
+    assign DistY_apple = DrawY - appleysig;
+	 //fruit.sv
+	 fruit apple(
+		.Reset(Reset_h),
+		.frame_clk(VGA_HS),
+		.fruitX(applexsig),
+		.fruitY(appleysig), 
+		.fruitS(applesizesig) );
+	 //sprite file
+	 apple_example apple(
+		.vga_clk(VGA_Clk),
+		.DrawX(drawxsig), 
+		.DrawY(drawysig),
+		.blank(blank),
+		.red(apple_R),
+		.green(apple_G),
+		.blue(apple_B)
+);
+
+	 //Peach
+	 logic [3:0] peach_R, peach_G, peach_B;
+	 logic [9:0] peachxsig,peachysig,peachsizesig;
+	 logic[9:0] DistX_peach, DistY_peach;
+	 assign DistX_peach = DrawX - peachxsig;
+    assign DistY_peach = DrawY - peachysig;
+	 //fruit.sv
+	 fruit peach(
+		.Reset(Reset_h),
+		.frame_clk(VGA_HS),
+		.fruitX(peachxsig),
+		.fruitY(peachysig), 
+		.fruitS(peachsizesig) );
+	 //sprite file
+	 peach_example peach(
+		.vga_clk(VGA_Clk),
+		.DrawX(drawxsig), 
+		.DrawY(drawysig),
+		.blank(blank),
+		.red(peach_R),
+		.green(peach_G),
+		.blue(peach_B)
+);
+
+	 
 	 
 	///For apple  
     always_comb
 //    begin:Fruit_on_proc
 	 begin
-        if ((DistX < Fruit_size) && (DistY < Fruit_size)) 
+        if ((DistX < applesizesig) && (DistY < applesizesig)) 
             Fruit_on = 1'b1;
         else 
             Fruit_on = 1'b0;
      end 
+	  
+	 	///For peach  
+    always_comb
+//    begin:Fruit_on_proc
+	 begin
+        if ((DistX < peachsizesig) && (DistY < peachsizesig)) 
+            Peach_on = 1'b1;
+        else 
+            Peach_on = 1'b0;
+     end
       
 		
     always_comb
@@ -49,13 +107,13 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
         end  
 		  
 //		  //DRAW: Fruit2
-//        else if (Melon_on ==1'b1) //melon on, paint melon
-//		  begin
-//		      Red = 8'hff;
-//            Green = 8'h55;
-//            Blue = 8'h00;
-//				///Color of Melon
-//		  end
+        else if ((Peach_on == 1'b1)&&((Red!=peach_R)||(Green!=peach_G||(Blue!=peach_B)))) //implementing transparency
+		  begin
+            Red = {4'b0,peach_R};
+            Green = {4'b0,peach_G};
+            Blue = {4'b0,peach_B};
+				///Color of Peach
+		  end
 		  
 		  //DRAW: Background
 		  else
