@@ -115,9 +115,9 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	assign {Reset_h}=~ (KEY[0]);
 
 	//Our A/D converter is only 12 bit
-	assign VGA_R = Red[7:4];
-	assign VGA_B = Blue[7:4];
-	assign VGA_G = Green[7:4];
+	assign VGA_R = Red[3:0];
+	assign VGA_B = Blue[3:0];
+	assign VGA_G = Green[3:0];
 ///////////!!!!!!!!!!!Change to [4:0]?
 	
 	
