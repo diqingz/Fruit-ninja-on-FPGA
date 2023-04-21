@@ -25,7 +25,8 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
     assign Size = Fruit_size;
 	///For apple  
     always_comb
-    begin:Fruit_on_proc
+//    begin:Fruit_on_proc
+	 begin
         if ((DistX < Fruit_size) && (DistY < Fruit_size)) 
             Fruit_on = 1'b1;
         else 
@@ -34,7 +35,8 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
       
 		
     always_comb
-    begin:RGB_Display
+	 begin
+//    begin:RGB_Display
 	 
 		  //DRAW: Apple
         if ((Fruit_on == 1'b1)&&((Red!=apple_R)||(Green!=apple_G||(Blue!=apple_B)))) //implementing transparency
