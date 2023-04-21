@@ -13,7 +13,7 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_size,
+module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_size,
 							  input 			[3:0] apple_R, apple_G, apple_B,BKG_R, BKG_G, BKG_B,
                        output logic [7:0]  Red, Green, Blue );
     
