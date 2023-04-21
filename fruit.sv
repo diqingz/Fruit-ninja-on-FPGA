@@ -1,6 +1,6 @@
 
 module  fruit( input Reset, frame_clk,
-//					input [7:0] keycode,
+//					
                output [9:0]  fruitX,fruitY, fruitS );
     
     logic [9:0] Fruit_X_Pos, Fruit_X_Motion, Fruit_Y_Pos, Fruit_Y_Motion, Fruit_Size, Fruit_init, Fruit_X_Out, Fruit_Y_Out;
@@ -13,9 +13,17 @@ module  fruit( input Reset, frame_clk,
     parameter [9:0] Fruit_Y_Max=479;     // Bottommost point on the Y axis
     parameter [9:0] Fruit_X_Step=1;      // Step size on the X axis
     parameter [9:0] Fruit_Y_Step=1 ;      // Step size on the Y axis SPEED?
-    assign Fruit_Size = 4;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
+    assign Fruit_Size = 10;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
 	 //Should be changed later if creating different fruits!!!!
    
+	
+//Instantiate lfsr for random numbers
+random_num random1(.clk(frame_clk), 
+						 .reset(Reset),
+						 .out(ran_num)
+);
+	
+	
     always_ff @ (posedge Reset or posedge frame_clk )
 //    begin: Move_Ball
 	 begin
@@ -35,10 +43,10 @@ module  fruit( input Reset, frame_clk,
 			begin
 			//Set to random values
 				Fruit_Y_Pos <= Fruit_Y_Max;
-				Fruit_X_Pos <= //random
+				Fruit_X_Pos <= (ran_num < 156) ? (ran_num) : (ran_num - 156);//random
 				//Set color to fruit color
-				Fruit_X_Motion <= 1;//random NEG
-				Fruit_Y_Motion <= 1;//random
+				Fruit_X_Motion <=(ran_num < 10) ? (ran_num) : (ran_num - 246) ;//random NEG
+				Fruit_Y_Motion <= 4;//random
 			end
 			else if (move_fruit) begin
 				
@@ -85,16 +93,9 @@ module  fruit( input Reset, frame_clk,
 				else if (number_of_fruits_cut > 69)
 					Fruit_Y_Acceleration <= Fruit_Y_Acceleration + 15;
 					
-			end //else if
+			end 
 			
-//			else
-//			begin
-//		  /// Fruit dropping if reaches midpoint
-////				if(Fruit_X_Pos ==((Fruit_X_Max - 2*(Fruit_init - Fruit_X_Min))/2+Fruit_init - Fruit_X_Min))
-//				Fruit_Y_Motion <= Fruit_Y_Motion + Fruit_Y_Acceleration; // Changes velocity given accleration
-////				Fruit_Y_Pos = Fruit_Y_Motion + Fruit_Y_Pos;//updating the position
-////				Fruit_X_Pos = Fruit_X_Motion + Fruit_X_Pos;
-//			end
+
 		  end
 
 
@@ -104,7 +105,7 @@ module  fruit( input Reset, frame_clk,
 			
 
 		end  
-//    end
+
        
     assign FruitX = Fruit_X_Pos;
    
