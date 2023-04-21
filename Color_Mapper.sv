@@ -36,6 +36,8 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
 		
     always_comb
     begin:RGB_Display
+	 
+		  //DRAW: Apple
         if ((Fruit_on == 1'b1)) 
         begin 
             Red = 8'hff;
@@ -44,15 +46,17 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
 				///Draw apple here
         end  
 		  
+		  //DRAW: Fruit2
         else if (Melon_on ==1'b1) //melon on, paint melon
 		  begin
 		      Red = 8'hff;
             Green = 8'h55;
             Blue = 8'h00;
 				///Color of Melon
-		  
 		  end
 		  
+		  //DRAW: Background
+		  else
         begin 
             Red = 8'h00; 
             Green = 8'h00;
