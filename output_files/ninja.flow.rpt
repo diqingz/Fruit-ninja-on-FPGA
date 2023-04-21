@@ -1,5 +1,5 @@
 Flow report for ninja
-Fri Apr 21 12:02:09 2023
+Fri Apr 21 13:57:23 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Apr 21 12:02:08 2023      ;
+; Flow Status                        ; Flow Failed - Fri Apr 21 13:57:22 2023      ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 6,667 / 49,760 ( 13 % )                     ;
-;     Total combinational functions  ; 5,759 / 49,760 ( 12 % )                     ;
-;     Dedicated logic registers      ; 2,292 / 49,760 ( 5 % )                      ;
-; Total registers                    ; 2361                                        ;
+; Total logic elements               ; 4,509 / 49,760 ( 9 % )                      ;
+;     Total combinational functions  ; 3,601 / 49,760 ( 7 % )                      ;
+;     Dedicated logic registers      ; 2,263 / 49,760 ( 5 % )                      ;
+; Total registers                    ; 2332                                        ;
 ; Total pins                         ; 141 / 360 ( 39 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,500,608 / 1,677,312 ( 149 % )             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/21/2023 12:00:58 ;
+; Start date & time ; 04/21/2023 13:56:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ninja               ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------+---------------+-------------------+----------------+
 ; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name       ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------+---------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264562646138663.168209645707244                         ; --            ; --                ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264562646138663.168210338707684                         ; --            ; --                ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                       ; --            ; --                ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                         ; <None>        ; --                ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                    ; --            ; --                ; eda_simulation ;
@@ -112,9 +112,9 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:54     ; 1.0                     ; 5311 MB             ; 00:00:38                           ;
-; Fitter               ; 00:00:12     ; 1.0                     ; 5746 MB             ; 00:00:11                           ;
-; Total                ; 00:01:06     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 5303 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:12     ; 1.0                     ; 5730 MB             ; 00:00:10                           ;
+; Total                ; 00:00:51     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

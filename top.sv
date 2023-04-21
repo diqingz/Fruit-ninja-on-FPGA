@@ -9,7 +9,7 @@ module top(
       input    [ 9: 0]   SW,
 
       ///////// LEDR /////////
-      output   [ 9: 0]   LEDR,
+//      output   [ 9: 0]   LEDR,
 
       ///////// HEX /////////
       output   [ 7: 0]   HEX0,
@@ -66,8 +66,8 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 //=======================================================
 	logic SPI0_CS_N, SPI0_SCLK, SPI0_MISO, SPI0_MOSI, USB_GPX, USB_IRQ, USB_RST;
 	logic [3:0] hex_num_4, hex_num_3, hex_num_1, hex_num_0; //4 bit input hex digits
-	logic [1:0] signs;
-	logic [1:0] hundreds;
+//	logic [1:0] signs;
+//	logic [1:0] hundreds;
 	logic [9:0] drawxsig, drawysig, fruitxsig, fruitysig, fruitsizesig;
 	logic [7:0] Red, Blue, Green;
 	logic [7:0] keycode;
@@ -209,6 +209,10 @@ background_example background (
 
 color_mapper Color_Mapper(
 		//INPUTS: general
+		.Reset_h(Reset_h),
+		.VGA_HS(VGA_HS),
+		.VGA_Clk(VGA_Clk),
+		.blank(blank),
 		.DrawX(drawxsig),
 		.DrawY(drawysig),
 		//INPUTS for fruits,bomb and background

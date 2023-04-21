@@ -7,7 +7,7 @@ reg [7:0] lfsr_reg = 8'hFF; // initial value
 always @(posedge clk) begin
     if (reset) 
 	 begin
-        lfsr_reg <= 8'hFFFF;
+        lfsr_reg <= 8'hFF;
     end 
 	 else 
 	 begin

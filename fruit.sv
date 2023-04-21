@@ -54,7 +54,8 @@ random_num random1(.clk(frame_clk),
 				Fruit_X_Motion <=(ran_num < 10) ? (ran_num) : (ran_num - 246) ;//random NEG
 				Fruit_Y_Motion <= 4;//random
 			end
-			else if (move_fruit) begin
+			else if (move_fruit) 
+			begin
 				
 				// set fruit movement speed (number to add)
 				if (number_of_fruits_cut <= 3)
@@ -101,15 +102,12 @@ random_num random1(.clk(frame_clk),
 					
 			end 
 			
-
-		  end
-
-
 				 Fruit_Y_Motion <= Fruit_Y_Motion + Fruit_Y_Acceleration; // Changes velocity given accleration
 				 Fruit_Y_Pos <= (Fruit_Y_Pos + Fruit_Y_Motion);  // Update ball position
 				 Fruit_X_Pos <= (Fruit_X_Pos + Fruit_X_Motion);
 			
 
+		  end	
 		end  
 
        

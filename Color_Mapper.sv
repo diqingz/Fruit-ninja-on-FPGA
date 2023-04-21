@@ -13,7 +13,8 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper( input         [9:0]  DrawX, DrawY,
+module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
+							  input         [9:0]  DrawX, DrawY,
 							  input 			[3:0] BKG_R, BKG_G, BKG_B,
                        output logic [7:0]  Red, Green, Blue );
     
@@ -36,7 +37,7 @@ module  color_mapper( input         [9:0]  DrawX, DrawY,
 		.fruitY(appleysig), 
 		.fruitS(applesizesig) );
 	 //sprite file
-	 apple_example apple(
+	 apple_example apple_sprite(
 		.vga_clk(VGA_Clk),
 		.DrawX(drawxsig), 
 		.DrawY(drawysig),
@@ -57,13 +58,13 @@ module  color_mapper( input         [9:0]  DrawX, DrawY,
 		.Reset(Reset_h),
 		.frame_clk(VGA_HS),
 		.fruitX(peachxsig),
-		.fruitY(peachysig), 
+		.fruitY(peachysig),
 		.fruitS(peachsizesig) );
 	 //sprite file
-	 peach_example peach(
+	 peach_example peach_sprite(
 		.vga_clk(VGA_Clk),
-		.DrawX(drawxsig), 
-		.DrawY(drawysig),
+		.DrawX(DrawX), 
+		.DrawY(DrawY),
 		.blank(blank),
 		.red(peach_R),
 		.green(peach_G),
@@ -76,7 +77,7 @@ module  color_mapper( input         [9:0]  DrawX, DrawY,
     always_comb
 //    begin:Fruit_on_proc
 	 begin
-        if ((DistX < applesizesig) && (DistY < applesizesig)) 
+        if ((DistX_apple < applesizesig) && (DistY_apple < applesizesig)) 
             Fruit_on = 1'b1;
         else 
             Fruit_on = 1'b0;
@@ -86,7 +87,7 @@ module  color_mapper( input         [9:0]  DrawX, DrawY,
     always_comb
 //    begin:Fruit_on_proc
 	 begin
-        if ((DistX < peachsizesig) && (DistY < peachsizesig)) 
+        if ((DistX_peach < peachsizesig) && (DistY_peach < peachsizesig)) 
             Peach_on = 1'b1;
         else 
             Peach_on = 1'b0;
