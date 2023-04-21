@@ -18,9 +18,8 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
                        output logic [7:0]  Red, Green, Blue );
     
     logic Fruit_on;
-	 
-	  
-    unsigned int DistX, DistY, Size;
+
+    logic[9:0] DistX, DistY, Size;
 	 assign DistX = DrawX - FruitX;
     assign DistY = DrawY - FruitY;
     assign Size = Fruit_size;
@@ -33,7 +32,6 @@ module  color_mapper ( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_si
             Fruit_on = 1'b0;
      end 
       
-		
 		
     always_comb
     begin:RGB_Display

@@ -37,8 +37,8 @@ module  fruit( input Reset, frame_clk,
 				Fruit_Y_Pos <= Fruit_Y_Max;
 				Fruit_X_Pos <= //random
 				//Set color to fruit color
-				Fruit_X_Motion = //random NEG
-				Fruit_Y_Motion = //random
+				Fruit_X_Motion = 1//random NEG
+				Fruit_Y_Motion = 1//random
 			end
 			else if (move_fruit) begin
 				
@@ -98,9 +98,6 @@ module  fruit( input Reset, frame_clk,
 		  end
 
 
-  
-					default: ;
-			   endcase
 				 Fruit_Y_Motion <= Fruit_Y_Motion + Fruit_Y_Acceleration; // Changes velocity given accleration
 				 Fruit_Y_Pos <= (Fruit_Y_Pos + Fruit_Y_Motion);  // Update ball position
 				 Fruit_X_Pos <= (Fruit_X_Pos + Fruit_X_Motion);

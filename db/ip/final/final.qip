@@ -1,22 +1,21 @@
 set_global_assignment -entity "final" -library "final" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "final" -library "final" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "final" -library "final" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -library "final" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../final.sopcinfo"]
-set_global_assignment -entity "final" -library "final" -name SLD_INFO "QSYS_NAME final HAS_SOPCINFO 1 GENERATION_ID 1682041134"
-set_global_assignment -library "final" -name MISC_FILE [file join $::quartus(qip_path) "../final.cmp"]
+set_global_assignment -library "final" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../../final.sopcinfo"]
+set_global_assignment -entity "final" -library "final" -name SLD_INFO "QSYS_NAME final HAS_SOPCINFO 1 GENERATION_ID 1682041186"
 set_global_assignment -library "final" -name SLD_FILE [file join $::quartus(qip_path) "final.regmap"]
 set_global_assignment -library "final" -name SLD_FILE [file join $::quartus(qip_path) "final.debuginfo"]
 set_global_assignment -entity "final" -library "final" -name IP_TARGETED_DEVICE_FAMILY "MAX 10"
 set_global_assignment -entity "final" -library "final" -name IP_GENERATED_DEVICE_FAMILY "{MAX 10}"
 set_global_assignment -entity "final" -library "final" -name IP_QSYS_MODE "SYSTEM"
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
-set_global_assignment -library "final" -name MISC_FILE [file join $::quartus(qip_path) "../../final.qsys"]
+set_global_assignment -library "final" -name MISC_FILE [file join $::quartus(qip_path) "../../../final.qsys"]
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_NAME "ZmluYWw="
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_DISPLAY_NAME "ZmluYWw="
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY4MjA0MTEzNA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY4MjA0MTE4Ng==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::TUFYIDEw::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBNNTBEQ0Y0ODRDN0c=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "final" -library "final" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
