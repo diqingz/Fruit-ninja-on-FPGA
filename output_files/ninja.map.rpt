@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ninja
-Thu Apr 20 20:50:55 2023
+Thu Apr 20 20:51:28 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Apr 20 20:50:55 2023           ;
+; Analysis & Synthesis Status        ; Failed - Thu Apr 20 20:51:28 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
@@ -164,7 +164,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 20 20:50:43 2023
+    Info: Processing started: Thu Apr 20 20:51:17 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fruit_ninja -c ninja
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -329,15 +329,37 @@ Info (12021): Found 1 design units, including 1 entities, in source file font_ro
     Info (12023): Found entity 1: font_rom File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/font_rom.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top.sv
     Info (12023): Found entity 1: top File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 1
-Error (10170): Verilog HDL syntax error at fruit.sv(40) near text: "=";  expecting "++", or "--". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 40
-Error (10170): Verilog HDL syntax error at fruit.sv(107) near text: "end"; "end" without "begin" . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 107
-Error (10112): Ignored design unit "fruit" at fruit.sv(2) due to previous errors File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 2
-Info (12021): Found 0 design units, including 0 entities, in source file fruit.sv
+Info (12021): Found 1 design units, including 1 entities, in source file fruit.sv
+    Info (12023): Found entity 1: fruit File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at fruit.sv(109): created implicit net for "FruitX" File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 109
+Warning (10236): Verilog HDL Implicit Net warning at fruit.sv(111): created implicit net for "FruitY" File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 111
+Warning (10236): Verilog HDL Implicit Net warning at fruit.sv(113): created implicit net for "FruitS" File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 113
+Warning (10037): Verilog HDL or VHDL warning at final_SDRAM.v(318): conditional expression evaluates to a constant File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_SDRAM.v Line: 318
+Warning (10037): Verilog HDL or VHDL warning at final_SDRAM.v(328): conditional expression evaluates to a constant File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_SDRAM.v Line: 328
+Warning (10037): Verilog HDL or VHDL warning at final_SDRAM.v(338): conditional expression evaluates to a constant File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_SDRAM.v Line: 338
+Warning (10037): Verilog HDL or VHDL warning at final_SDRAM.v(682): conditional expression evaluates to a constant File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_SDRAM.v Line: 682
+Warning (10037): Verilog HDL or VHDL warning at final_spi_0.v(402): conditional expression evaluates to a constant File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/final/synthesis/submodules/final_spi_0.v Line: 402
+Error (10161): Verilog HDL error at fruit.sv(34): object "new_fruit" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 34
+Error (10161): Verilog HDL error at fruit.sv(43): object "move_fruit" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 43
+Error (10161): Verilog HDL error at fruit.sv(46): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 46
+Error (10161): Verilog HDL error at fruit.sv(49): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 49
+Error (10161): Verilog HDL error at fruit.sv(52): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 52
+Error (10161): Verilog HDL error at fruit.sv(55): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 55
+Error (10161): Verilog HDL error at fruit.sv(58): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 58
+Error (10161): Verilog HDL error at fruit.sv(61): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 61
+Error (10161): Verilog HDL error at fruit.sv(64): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 64
+Error (10161): Verilog HDL error at fruit.sv(67): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 67
+Error (10161): Verilog HDL error at fruit.sv(70): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 70
+Error (10161): Verilog HDL error at fruit.sv(73): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 73
+Error (10161): Verilog HDL error at fruit.sv(76): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 76
+Error (10161): Verilog HDL error at fruit.sv(79): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 79
+Error (10161): Verilog HDL error at fruit.sv(82): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 82
+Error (10161): Verilog HDL error at fruit.sv(85): object "number_of_fruits_cut" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/fruit.sv Line: 85
 Info (144001): Generated suppressed messages file C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/output_files/ninja.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
-    Error: Peak virtual memory: 4722 megabytes
-    Error: Processing ended: Thu Apr 20 20:50:57 2023
-    Error: Elapsed time: 00:00:14
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 16 errors, 10 warnings
+    Error: Peak virtual memory: 4733 megabytes
+    Error: Processing ended: Thu Apr 20 20:51:30 2023
+    Error: Elapsed time: 00:00:13
     Error: Total CPU time (on all processors): 00:00:10
 
 
