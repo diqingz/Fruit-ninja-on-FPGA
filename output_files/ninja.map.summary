@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Fri Apr 21 13:57:09 2023
+Analysis & Synthesis Status : Successful - Fri Apr 21 16:34:25 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ninja
 Top-level Entity Name : top
 Family : MAX 10
-Total logic elements : 4,524
-    Total combinational functions : 3,600
-    Dedicated logic registers : 2,298
-Total registers : 2298
-Total pins : 141
+Total logic elements : 4,000
+    Total combinational functions : 3,076
+    Dedicated logic registers : 2,288
+Total registers : 2288
+Total pins : 131
 Total virtual pins : 0
-Total memory bits : 2,500,608
+Total memory bits : 350,208
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1
 UFM blocks : 0

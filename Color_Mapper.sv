@@ -25,7 +25,7 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
 	 
 	 //Apple
 	 logic [3:0] apple_R, apple_G, apple_B;
-	 logic [9:0] applexsig,appleysig,applesizesig;
+	 logic [9:0] applexsig,appleysig,applesizex,applesizey;
 	 logic [9:0] DistX_apple, DistY_apple;
 	 assign DistX_apple = DrawX - applexsig;
     assign DistY_apple = DrawY - appleysig;
@@ -35,7 +35,8 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
 		.frame_clk(VGA_HS),
 		.fruitX(applexsig),
 		.fruitY(appleysig), 
-		.fruitS(applesizesig) );
+		.fruitSX(applesizesx),
+		.fruitSY(applesizey));
 	 //sprite file
 	 apple_example apple_sprite(
 		.vga_clk(VGA_Clk),
@@ -49,7 +50,7 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
 
 	 //Peach
 	 logic [3:0] peach_R, peach_G, peach_B;
-	 logic [9:0] peachxsig,peachysig,peachsizesig;
+	 logic [9:0] peachxsig,peachysig,peachsizex,peachsizey;
 	 logic[9:0] DistX_peach, DistY_peach;
 	 assign DistX_peach = DrawX - peachxsig;
     assign DistY_peach = DrawY - peachysig;
@@ -59,7 +60,8 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
 		.frame_clk(VGA_HS),
 		.fruitX(peachxsig),
 		.fruitY(peachysig),
-		.fruitS(peachsizesig) );
+		.fruitSX(peachsizesx),
+		.fruitSY(peachesizey));
 	 //sprite file
 	 peach_example peach_sprite(
 		.vga_clk(VGA_Clk),
@@ -77,7 +79,7 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
     always_comb
 //    begin:Fruit_on_proc
 	 begin
-        if ((DistX_apple < applesizesig) && (DistY_apple < applesizesig)) 
+        if ((DistX_apple < applesizex) && (DistY_apple < applesizey)) 
             Fruit_on = 1'b1;
         else 
             Fruit_on = 1'b0;
@@ -87,7 +89,7 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
     always_comb
 //    begin:Fruit_on_proc
 	 begin
-        if ((DistX_peach < peachsizesig) && (DistY_peach < peachsizesig)) 
+        if ((DistX_peach < peachsizex) && (DistY_peach < peachsizey)) 
             Peach_on = 1'b1;
         else 
             Peach_on = 1'b0;
@@ -106,7 +108,7 @@ module  color_mapper(  input Reset_h, VGA_HS, VGA_Clk, blank,
             Blue = {4'b0,apple_B};
 				///Draw apple here
         end  
-		  
+//		  
 //		  //DRAW: Fruit2
         else if ((Peach_on == 1'b1)&&((Red!=peach_R)||(Green!=peach_G||(Blue!=peach_B)))) //implementing transparency
 		  begin

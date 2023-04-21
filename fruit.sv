@@ -1,7 +1,7 @@
 
 module  fruit( input Reset, frame_clk,
 //					
-               output [9:0]  fruitX,fruitY, fruitS );
+               output [9:0]  fruitX,fruitY, fruitSX,fruitSY );
     
     logic [9:0] Fruit_X_Pos, Fruit_X_Motion, Fruit_Y_Pos, Fruit_Y_Motion, Fruit_Size, Fruit_init, Fruit_X_Out, Fruit_Y_Out;
 	 int Fruit_Y_Acceleration = 9; //Defines acceleration
@@ -14,6 +14,7 @@ module  fruit( input Reset, frame_clk,
     parameter [9:0] Fruit_X_Step=1;      // Step size on the X axis
     parameter [9:0] Fruit_Y_Step=1 ;      // Step size on the Y axis SPEED?
     assign Fruit_Size = 10;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
+
 	 //Should be changed later if creating different fruits!!!!
    
 	////////////////////HARD WIRE signals from control//////////////////////////////
@@ -21,7 +22,7 @@ module  fruit( input Reset, frame_clk,
 	logic move_fruit = 1;
 	logic  number_of_fruits_cut = 1;
 	//////////////////////////////////////////////////////////
-	
+	logic [7:0] ran_num;
 	
 //Instantiate lfsr for random numbers
 random_num random1(.clk(frame_clk), 

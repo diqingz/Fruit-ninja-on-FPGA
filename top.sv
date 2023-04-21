@@ -66,8 +66,8 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 //=======================================================
 	logic SPI0_CS_N, SPI0_SCLK, SPI0_MISO, SPI0_MOSI, USB_GPX, USB_IRQ, USB_RST;
 	logic [3:0] hex_num_4, hex_num_3, hex_num_1, hex_num_0; //4 bit input hex digits
-//	logic [1:0] signs;
-//	logic [1:0] hundreds;
+	logic [1:0] signs;
+	logic [1:0] hundreds;
 	logic [9:0] drawxsig, drawysig, fruitxsig, fruitysig, fruitsizesig;
 	logic [7:0] Red, Blue, Green;
 	logic [7:0] keycode;
@@ -176,25 +176,6 @@ vga_controller VGA( .Clk(MAX10_CLK1_50),       // 50 MHz clock
 					  .DrawX(drawxsig),     // horizontal coordinate
 					  .DrawY(drawysig) );
 	 
-//	 //FRUIT.SV
-//fruit fruit(
-//		.Reset(Reset_h),
-//		.frame_clk(VGA_HS),
-//		.fruitX(fruitxsig),
-//		.fruitY(fruitysig), 
-//		.fruitS(fruitsizesig) );
-//	 
-//	 
-//	//FRUITS
-//apple_example apple(
-//		.vga_clk(VGA_Clk),
-//		.DrawX(drawxsig), 
-//		.DrawY(drawysig),
-//		.blank(blank),
-//		.red(apple_R),
-//		.green(apple_G),
-//		.blue(apple_B)
-//);
 
 	//BKG
 background_example background (
@@ -206,6 +187,7 @@ background_example background (
 		.green(BKG_G), 
 		.blue(BKG_B)
 );
+
 
 color_mapper Color_Mapper(
 		//INPUTS: general
