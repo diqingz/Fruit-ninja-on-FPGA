@@ -23,6 +23,7 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
 	 assign DistX = DrawX - FruitX;
     assign DistY = DrawY - FruitY;
     assign Size = Fruit_size;
+	 
 	///For apple  
     always_comb
 //    begin:Fruit_on_proc
@@ -41,9 +42,9 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
 		  //DRAW: Apple
         if ((Fruit_on == 1'b1)&&((Red!=apple_R)||(Green!=apple_G||(Blue!=apple_B)))) //implementing transparency
         begin 
-            Red = apple_R;
-            Green = apple_G;
-            Blue = apple_B;
+            Red = {4'b0,apple_R};
+            Green = {4'b0,apple_G};
+            Blue = {4'b0,apple_B};
 				///Draw apple here
         end  
 		  
@@ -59,9 +60,9 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
 		  //DRAW: Background
 		  else
         begin 
-            Red = BKG_R; 
-            Green = BKG_G;
-            Blue = BKG_B;
+            Red = {4'b0,BKG_R}; 
+            Green = {4'b0,BKG_G};
+            Blue = {4'b0,BKG_B};
 				///Color of background
         end      
     end 

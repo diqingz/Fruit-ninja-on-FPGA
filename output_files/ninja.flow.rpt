@@ -1,5 +1,5 @@
 Flow report for ninja
-Fri Apr 21 11:23:10 2023
+Fri Apr 21 12:02:09 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Apr 21 11:23:09 2023      ;
+; Flow Status                        ; Flow Failed - Fri Apr 21 12:02:08 2023      ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/21/2023 11:21:55 ;
+; Start date & time ; 04/21/2023 12:00:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ninja               ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------+---------------+-------------------+----------------+
 ; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name       ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------+---------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264562646138663.168209411525992                         ; --            ; --                ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264562646138663.168209645707244                         ; --            ; --                ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                       ; --            ; --                ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                         ; <None>        ; --                ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                    ; --            ; --                ; eda_simulation ;
@@ -112,9 +112,9 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:57     ; 1.0                     ; 5306 MB             ; 00:00:46                           ;
-; Fitter               ; 00:00:13     ; 1.0                     ; 5754 MB             ; 00:00:12                           ;
-; Total                ; 00:01:10     ; --                      ; --                  ; 00:00:58                           ;
+; Analysis & Synthesis ; 00:00:54     ; 1.0                     ; 5311 MB             ; 00:00:38                           ;
+; Fitter               ; 00:00:12     ; 1.0                     ; 5746 MB             ; 00:00:11                           ;
+; Total                ; 00:01:06     ; --                      ; --                  ; 00:00:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

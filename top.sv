@@ -118,7 +118,7 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	assign VGA_R = Red[3:0];
 	assign VGA_B = Blue[3:0];
 	assign VGA_G = Green[3:0];
-///////////!!!!!!!!!!!Change to [4:0]?
+///////////!!!!!!!!!!!Change to [3:0]?
 	
 	
 final_proj u0 (

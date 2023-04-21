@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ninja
-Fri Apr 21 11:22:55 2023
+Fri Apr 21 12:01:55 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -248,96 +248,95 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 240. Parameter Settings for Inferred Entity Instance: apple_example:apple|lpm_mult:Mult1
 241. altsyncram Parameter Settings by Entity Instance
 242. lpm_mult Parameter Settings by Entity Instance
-243. Port Connectivity Checks: "color_mapper:Color_Mapper"
-244. Port Connectivity Checks: "fruit:fruit|random_num:random1"
-245. Port Connectivity Checks: "vga_controller:VGA"
-246. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_req_sync_uq1"
-247. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller_002"
-248. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller_001"
-249. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
-250. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller"
-251. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser_003"
-252. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser_002"
-253. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser_001"
-254. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser"
-255. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_s1_cmd_width_adapter"
-256. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_s1_rsp_width_adapter|altera_merlin_burst_uncompressor:uncompressor"
-257. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_s1_rsp_width_adapter"
-258. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_rsp_mux:rsp_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
-259. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_cmd_mux:cmd_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
-260. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_router_006:router_006|final_mm_interconnect_0_router_006_default_decode:the_default_decode"
-261. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_router_002:router_002|final_mm_interconnect_0_router_002_default_decode:the_default_decode"
-262. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_router:router|final_mm_interconnect_0_router_default_decode:the_default_decode"
-263. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:spi_0_spi_control_port_agent_rsp_fifo"
-264. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:spi_0_spi_control_port_agent"
-265. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo"
-266. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_0_s1_agent"
-267. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:hex_digits_pio_s1_agent_rsp_fifo"
-268. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:hex_digits_pio_s1_agent"
-269. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:usb_rst_s1_agent_rsp_fifo"
-270. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:usb_rst_s1_agent"
-271. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:usb_gpx_s1_agent_rsp_fifo"
-272. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:usb_gpx_s1_agent"
-273. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:usb_irq_s1_agent_rsp_fifo"
-274. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:usb_irq_s1_agent"
-275. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:keycode_s1_agent_rsp_fifo"
-276. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:keycode_s1_agent"
-277. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:reset_s1_agent_rsp_fifo"
-278. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:reset_s1_agent"
-279. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:start_s1_agent_rsp_fifo"
-280. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:start_s1_agent"
-281. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo"
-282. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rsp_fifo"
-283. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_s1_agent"
-284. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_0_s1_agent_rsp_fifo"
-285. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:onchip_memory2_0_s1_agent"
-286. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_pll_pll_slave_agent_rsp_fifo"
-287. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_pll_pll_slave_agent"
-288. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo"
-289. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent"
-290. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_qsys_0_control_slave_agent_rsp_fifo"
-291. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_qsys_0_control_slave_agent"
-292. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_instruction_master_agent"
-293. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_data_master_agent"
-294. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:spi_0_spi_control_port_translator"
-295. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator"
-296. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:hex_digits_pio_s1_translator"
-297. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:usb_rst_s1_translator"
-298. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:usb_gpx_s1_translator"
-299. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:usb_irq_s1_translator"
-300. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:keycode_s1_translator"
-301. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:reset_s1_translator"
-302. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:start_s1_translator"
-303. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sdram_s1_translator"
-304. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:onchip_memory2_0_s1_translator"
-305. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sdram_pll_pll_slave_translator"
-306. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:nios2_gen2_0_debug_mem_slave_translator"
-307. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator"
-308. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_instruction_master_translator"
-309. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_data_master_translator"
-310. Port Connectivity Checks: "final_proj:u0|final_spi_0:spi_0"
-311. Port Connectivity Checks: "final_proj:u0|final_sdram_pll:sdram_pll|final_sdram_pll_altpll_vg92:sd1"
-312. Port Connectivity Checks: "final_proj:u0|final_sdram_pll:sdram_pll"
-313. Port Connectivity Checks: "final_proj:u0|final_onchip_memory2_0:onchip_memory2_0"
-314. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_debug_slave_wrapper:the_final_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:final_nios2_gen2_0_cpu_debug_slave_phy"
-315. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_debug_slave_wrapper:the_final_nios2_gen2_0_cpu_debug_slave_wrapper|final_nios2_gen2_0_cpu_debug_slave_sysclk:the_final_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4"
-316. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_debug_slave_wrapper:the_final_nios2_gen2_0_cpu_debug_slave_wrapper|final_nios2_gen2_0_cpu_debug_slave_sysclk:the_final_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3"
-317. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_pib:the_final_nios2_gen2_0_cpu_nios2_oci_pib"
-318. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_fifo:the_final_nios2_gen2_0_cpu_nios2_oci_fifo|final_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc:the_final_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc"
-319. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_dtrace:the_final_nios2_gen2_0_cpu_nios2_oci_dtrace|final_nios2_gen2_0_cpu_nios2_oci_td_mode:final_nios2_gen2_0_cpu_nios2_oci_trc_ctrl_td_mode"
-320. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_itrace:the_final_nios2_gen2_0_cpu_nios2_oci_itrace"
-321. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_dbrk:the_final_nios2_gen2_0_cpu_nios2_oci_dbrk"
-322. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_xbrk:the_final_nios2_gen2_0_cpu_nios2_oci_xbrk"
-323. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_debug:the_final_nios2_gen2_0_cpu_nios2_oci_debug"
-324. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci"
-325. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_test_bench:the_final_nios2_gen2_0_cpu_test_bench"
-326. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0"
-327. Port Connectivity Checks: "final_proj:u0|final_SDRAM:sdram|final_SDRAM_input_efifo_module:the_final_SDRAM_input_efifo_module"
-328. Port Connectivity Checks: "final_proj:u0"
-329. Post-Synthesis Netlist Statistics for Top Partition
-330. Elapsed Time Per Partition
-331. Analysis & Synthesis Messages
-332. Analysis & Synthesis Suppressed Messages
+243. Port Connectivity Checks: "fruit:fruit|random_num:random1"
+244. Port Connectivity Checks: "vga_controller:VGA"
+245. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+246. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller_002"
+247. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller_001"
+248. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+249. Port Connectivity Checks: "final_proj:u0|altera_reset_controller:rst_controller"
+250. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser_003"
+251. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser_002"
+252. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser_001"
+253. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_st_handshake_clock_crosser:crosser"
+254. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_s1_cmd_width_adapter"
+255. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_s1_rsp_width_adapter|altera_merlin_burst_uncompressor:uncompressor"
+256. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_s1_rsp_width_adapter"
+257. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_rsp_mux:rsp_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
+258. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_cmd_mux:cmd_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
+259. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_router_006:router_006|final_mm_interconnect_0_router_006_default_decode:the_default_decode"
+260. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_router_002:router_002|final_mm_interconnect_0_router_002_default_decode:the_default_decode"
+261. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|final_mm_interconnect_0_router:router|final_mm_interconnect_0_router_default_decode:the_default_decode"
+262. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:spi_0_spi_control_port_agent_rsp_fifo"
+263. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:spi_0_spi_control_port_agent"
+264. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_0_s1_agent_rsp_fifo"
+265. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_0_s1_agent"
+266. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:hex_digits_pio_s1_agent_rsp_fifo"
+267. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:hex_digits_pio_s1_agent"
+268. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:usb_rst_s1_agent_rsp_fifo"
+269. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:usb_rst_s1_agent"
+270. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:usb_gpx_s1_agent_rsp_fifo"
+271. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:usb_gpx_s1_agent"
+272. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:usb_irq_s1_agent_rsp_fifo"
+273. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:usb_irq_s1_agent"
+274. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:keycode_s1_agent_rsp_fifo"
+275. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:keycode_s1_agent"
+276. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:reset_s1_agent_rsp_fifo"
+277. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:reset_s1_agent"
+278. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:start_s1_agent_rsp_fifo"
+279. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:start_s1_agent"
+280. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo"
+281. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rsp_fifo"
+282. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_s1_agent"
+283. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:onchip_memory2_0_s1_agent_rsp_fifo"
+284. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:onchip_memory2_0_s1_agent"
+285. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_pll_pll_slave_agent_rsp_fifo"
+286. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_pll_pll_slave_agent"
+287. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:nios2_gen2_0_debug_mem_slave_agent_rsp_fifo"
+288. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:nios2_gen2_0_debug_mem_slave_agent"
+289. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_qsys_0_control_slave_agent_rsp_fifo"
+290. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_qsys_0_control_slave_agent"
+291. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_instruction_master_agent"
+292. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:nios2_gen2_0_data_master_agent"
+293. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:spi_0_spi_control_port_translator"
+294. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_0_s1_translator"
+295. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:hex_digits_pio_s1_translator"
+296. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:usb_rst_s1_translator"
+297. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:usb_gpx_s1_translator"
+298. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:usb_irq_s1_translator"
+299. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:keycode_s1_translator"
+300. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:reset_s1_translator"
+301. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:start_s1_translator"
+302. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sdram_s1_translator"
+303. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:onchip_memory2_0_s1_translator"
+304. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sdram_pll_pll_slave_translator"
+305. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:nios2_gen2_0_debug_mem_slave_translator"
+306. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_qsys_0_control_slave_translator"
+307. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_instruction_master_translator"
+308. Port Connectivity Checks: "final_proj:u0|final_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:nios2_gen2_0_data_master_translator"
+309. Port Connectivity Checks: "final_proj:u0|final_spi_0:spi_0"
+310. Port Connectivity Checks: "final_proj:u0|final_sdram_pll:sdram_pll|final_sdram_pll_altpll_vg92:sd1"
+311. Port Connectivity Checks: "final_proj:u0|final_sdram_pll:sdram_pll"
+312. Port Connectivity Checks: "final_proj:u0|final_onchip_memory2_0:onchip_memory2_0"
+313. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_debug_slave_wrapper:the_final_nios2_gen2_0_cpu_debug_slave_wrapper|sld_virtual_jtag_basic:final_nios2_gen2_0_cpu_debug_slave_phy"
+314. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_debug_slave_wrapper:the_final_nios2_gen2_0_cpu_debug_slave_wrapper|final_nios2_gen2_0_cpu_debug_slave_sysclk:the_final_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4"
+315. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_debug_slave_wrapper:the_final_nios2_gen2_0_cpu_debug_slave_wrapper|final_nios2_gen2_0_cpu_debug_slave_sysclk:the_final_nios2_gen2_0_cpu_debug_slave_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3"
+316. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_pib:the_final_nios2_gen2_0_cpu_nios2_oci_pib"
+317. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_fifo:the_final_nios2_gen2_0_cpu_nios2_oci_fifo|final_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc:the_final_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc"
+318. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_dtrace:the_final_nios2_gen2_0_cpu_nios2_oci_dtrace|final_nios2_gen2_0_cpu_nios2_oci_td_mode:final_nios2_gen2_0_cpu_nios2_oci_trc_ctrl_td_mode"
+319. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_itrace:the_final_nios2_gen2_0_cpu_nios2_oci_itrace"
+320. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_dbrk:the_final_nios2_gen2_0_cpu_nios2_oci_dbrk"
+321. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_xbrk:the_final_nios2_gen2_0_cpu_nios2_oci_xbrk"
+322. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci|final_nios2_gen2_0_cpu_nios2_oci_debug:the_final_nios2_gen2_0_cpu_nios2_oci_debug"
+323. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_nios2_oci:the_final_nios2_gen2_0_cpu_nios2_oci"
+324. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0|final_nios2_gen2_0_cpu:cpu|final_nios2_gen2_0_cpu_test_bench:the_final_nios2_gen2_0_cpu_test_bench"
+325. Port Connectivity Checks: "final_proj:u0|final_nios2_gen2_0:nios2_gen2_0"
+326. Port Connectivity Checks: "final_proj:u0|final_SDRAM:sdram|final_SDRAM_input_efifo_module:the_final_SDRAM_input_efifo_module"
+327. Port Connectivity Checks: "final_proj:u0"
+328. Post-Synthesis Netlist Statistics for Top Partition
+329. Elapsed Time Per Partition
+330. Analysis & Synthesis Messages
+331. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -363,7 +362,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 21 11:22:55 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 21 12:01:54 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
@@ -7725,17 +7724,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "color_mapper:Color_Mapper"                                                                 ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Red[7..4]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Green[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Blue[7..4]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "fruit:fruit|random_num:random1"                                                                                        ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
@@ -9172,7 +9160,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Apr 21 11:21:54 2023
+    Info: Processing started: Fri Apr 21 12:00:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fruit_ninja -c ninja
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -9351,9 +9339,6 @@ Warning (10037): Verilog HDL or VHDL warning at final_spi_0.v(402): conditional 
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10858): Verilog HDL warning at top.sv(69): object signs used but never assigned File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 69
 Warning (10858): Verilog HDL warning at top.sv(70): object hundreds used but never assigned File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 70
-Warning (10230): Verilog HDL assignment warning at top.sv(118): truncated value with size 5 to match size of target (4) File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 118
-Warning (10230): Verilog HDL assignment warning at top.sv(119): truncated value with size 5 to match size of target (4) File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 119
-Warning (10230): Verilog HDL assignment warning at top.sv(120): truncated value with size 5 to match size of target (4) File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 120
 Warning (10030): Net "signs" at top.sv(69) has no driver or initial value, using a default initial value '0' File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 69
 Warning (10030): Net "hundreds" at top.sv(70) has no driver or initial value, using a default initial value '0' File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 70
 Warning (10034): Output port "LEDR" at top.sv(12) has no driver File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 12
@@ -9550,7 +9535,7 @@ Info (12128): Elaborating entity "background_palette" for hierarchy "background_
 Info (12128): Elaborating entity "color_mapper" for hierarchy "color_mapper:Color_Mapper" File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/top.sv Line: 228
 Warning (10036): Verilog HDL or VHDL warning at Color_Mapper.sv(22): object "Size" assigned a value but never read File: C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/Color_Mapper.sv Line: 22
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.04.21.11:22:15 Progress: Loading sld439734f3/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.04.21.12:01:15 Progress: Loading sld439734f3/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -9782,11 +9767,11 @@ Info (21057): Implemented 7553 device resources after synthesis - the final reso
     Info (21061): Implemented 6974 logic cells
     Info (21064): Implemented 432 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 127 warnings
-    Info: Peak virtual memory: 5306 megabytes
-    Info: Processing ended: Fri Apr 21 11:22:55 2023
-    Info: Elapsed time: 00:01:01
-    Info: Total CPU time (on all processors): 00:00:49
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
+    Info: Peak virtual memory: 5311 megabytes
+    Info: Processing ended: Fri Apr 21 12:01:55 2023
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:00:41
 
 
 +------------------------------------------+
