@@ -37,7 +37,7 @@ module  color_mapper( input        [9:0] FruitX, FruitY, DrawX, DrawY, Fruit_siz
     begin:RGB_Display
 	 
 		  //DRAW: Apple
-        if ((Fruit_on == 1'b1)) 
+        if ((Fruit_on == 1'b1)&&((Red!=apple_R)||(Green!=apple_G||(Blue!=apple_B)))) //implementing transparency
         begin 
             Red = apple_R;
             Green = apple_G;
