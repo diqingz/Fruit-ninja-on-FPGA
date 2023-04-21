@@ -102,8 +102,7 @@ module top(
 
 
 
-//========= ADD LOCAL SIGNALS==========
-logic [3:0] apple_R, apple_G, apple_B,BKG_R, BKG_G, BKG_B;
+
 logic Reset_h, vssig, blank, sync, VGA_Clk;
 
 
@@ -114,7 +113,7 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	logic [3:0] hex_num_4, hex_num_3, hex_num_1, hex_num_0; //4 bit input hex digits
 	logic [1:0] signs;
 	logic [1:0] hundreds;
-	logic [9:0] drawxsig, drawysig, fruitxsig, fruitysig, fruitsizesig;
+	logic [9:0] drawxsig, drawysig, ballxsig, ballysig, ballsizesig;
 	logic [7:0] Red, Blue, Green;
 	logic [7:0] keycode;
 
@@ -164,7 +163,6 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	assign VGA_R = Red[7:4];
 	assign VGA_B = Blue[7:4];
 	assign VGA_G = Green[7:4];
-///////////!!!!!!!!!!!Change to [4:0]?
 	
 	
 	lab6_2soc u0 (
@@ -206,72 +204,8 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	 );
 
 	 
-	 ///instantiate vga_controller, ninja, color_mapper, hex_driver, fruit, [fruits and background]
+	 ///instantiate vga_controller, ninja, color_mapper, hex_driver
 
-	 
-	 //VGA
-vga_controller VGA( .Clk(MAX10_CLK1_50),       // 50 MHz clock
-                 .Reset(Reset_h),     // reset signal
-                 .hs(VGA_HS),        // Horizontal sync pulse.  Active low
-					  .vs(VGA_VS),        // Vertical sync pulse.  Active low
-					  .pixel_clk(VGA_Clk), // 25 MHz pixel clock output
-					  .blank(blank),     // Blanking interval indicator.  Active low.
-				     .sync(sync),      // Composite Sync signal.  Active low.  We don't use it in this lab,
-												             //   but the video DAC on the DE2 board requires an input for it.
-					  .DrawX(drawxsig),     // horizontal coordinate
-					  .DrawY(drawysig) );
-	 
-	 //FRUIT.SV
-fruit fruit(
-		.Reset(Reset_h),
-		.frame_clk(VGA_HS),
-		.fruitX(fruitxsig),
-		.fruitY(fruitysig), 
-		.fruitS(fruitsizesig) );
-	 
-	 
-	//FRUITS
-apple_example apple(
-		.vga_clk(VGA_Clk),
-		.DrawX(drawxsig), 
-		.DrawY(drawysig),
-		.blank(blank),
-		.red(apple_R),
-		.green(apple_G),
-		.blue(apple_B)
-);
 
-	//BKG
-background_example background (
-		.vga_clk(VGA_Clk),
-		.DrawX(drawxsig),
-		.DrawY(drawysig),
-		.blank(blank),
-		.red(BKG_R), 
-		.green(BKG_G), 
-		.blue(BKG_B)
-);
-
-Color_Mapper Color_Mapper(
-		//INPUTS: general
-		.FruitX(fruitxsig),
-		.FruitY(fruitysig),
-		.DrawX(drawxsig),
-		.DrawY(drawysig),
-		.Fruit_size(fruitsizesig),
-		//INPUTS for fruits,bomb and background
-		.apple_R(apple_R),
-		.apple_G(apple_G),
-		.apple_B(apple_B),
-		.BKG_R(BKG_R),
-		.BKG_G(BKG_G), 
-		.BKG_B(BKG_B),
-		//OUTPUTS
-		.Red(Red),
-		.Green(Green),
-		.Blue(Blue)
-);
-	 
-	 
 
 endmodule

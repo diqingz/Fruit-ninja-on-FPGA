@@ -1,6 +1,6 @@
 
 module  fruit( input Reset, frame_clk,
-					input [7:0] keycode,
+//					input [7:0] keycode,
                output [9:0]  fruitX,fruitY, fruitS );
     
     logic [9:0] Fruit_X_Pos, Fruit_X_Motion, Fruit_Y_Pos, Fruit_Y_Motion, Fruit_Size, Fruit_init, Fruit_X_Out, Fruit_Y_Out;
