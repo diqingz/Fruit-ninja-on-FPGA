@@ -16,7 +16,7 @@ module  fruit( input Reset, frame_clk,
     assign Fruit_Size = 10;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
 	 //Should be changed later if creating different fruits!!!!
    
-	////////////////////HARD WIRE//////////////////////////////
+	////////////////////HARD WIRE signals from control//////////////////////////////
 	logic new_fruit= 1;
 	logic move_fruit = 1;
 	logic  number_of_fruits_cut = 1;
