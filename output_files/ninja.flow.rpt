@@ -1,5 +1,5 @@
 Flow report for ninja
-Thu Apr 20 23:32:45 2023
+Fri Apr 21 01:02:04 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Assembler Failed - Thu Apr 20 23:32:45 2023 ;
+; Flow Status                        ; Successful - Fri Apr 21 01:02:04 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Device                             ; 10M50DCF484C7G                              ;
+; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,566 / 49,760 ( 7 % )                      ;
+; Total logic elements               ; 3,572 / 49,760 ( 7 % )                      ;
 ;     Total combinational functions  ; 3,003 / 49,760 ( 6 % )                      ;
 ;     Dedicated logic registers      ; 2,244 / 49,760 ( 5 % )                      ;
 ; Total registers                    ; 2313                                        ;
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 0                                           ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/20/2023 23:31:39 ;
+; Start date & time ; 04/21/2023 01:00:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ninja               ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264562646138663.168205149901628                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264562646138663.168205685064596                         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                       ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                         ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                    ; --            ; --          ; eda_simulation ;
@@ -85,6 +85,10 @@ refer to the applicable agreement for further details.
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                       ; --            ; --          ; --             ;
 ; MISC_FILE                           ; final/synthesis/../final.cmp                            ; --            ; --          ; --             ;
 ; MISC_FILE                           ; final/synthesis/../../final.qsys                        ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                       ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                       ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                              ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                              ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family)                  ; --            ; top         ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                  ; --            ; top         ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                  ; --            ; top         ; Top            ;
@@ -105,10 +109,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 5301 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:28     ; 1.3                     ; 5987 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4697 MB             ; 00:00:02                           ;
-; Total                ; 00:01:00     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 5301 MB             ; 00:00:18                           ;
+; Fitter               ; 00:00:25     ; 1.3                     ; 5992 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4705 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.8                     ; 4925 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4722 MB             ; 00:00:02                           ;
+; Total                ; 00:01:05     ; --                      ; --                  ; 00:00:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,6 +126,8 @@ refer to the applicable agreement for further details.
 ; Analysis & Synthesis ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Fitter               ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-3D5L0RO  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -129,6 +137,8 @@ refer to the applicable agreement for further details.
 quartus_map --read_settings_files=on --write_settings_files=off fruit_ninja -c ninja
 quartus_fit --read_settings_files=off --write_settings_files=off fruit_ninja -c ninja
 quartus_asm --read_settings_files=off --write_settings_files=off fruit_ninja -c ninja
+quartus_sta fruit_ninja -c ninja
+quartus_eda --read_settings_files=off --write_settings_files=off fruit_ninja -c ninja
 
 
 
