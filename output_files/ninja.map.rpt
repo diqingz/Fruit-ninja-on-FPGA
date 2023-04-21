@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ninja
-Thu Apr 20 20:51:28 2023
+Thu Apr 20 21:38:34 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Apr 20 20:51:28 2023           ;
+; Analysis & Synthesis Status        ; Failed - Thu Apr 20 21:38:34 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ninja                                       ;
 ; Top-level Entity Name              ; top                                         ;
@@ -164,7 +164,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 20 20:51:17 2023
+    Info: Processing started: Thu Apr 20 21:38:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fruit_ninja -c ninja
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -358,9 +358,9 @@ Error (10161): Verilog HDL error at fruit.sv(85): object "number_of_fruits_cut" 
 Info (144001): Generated suppressed messages file C:/Users/sz_ol/Desktop/mandukie/College/1-SP23/ECE385/1111- FINAL/Fruit-ninja-on-FPGA/output_files/ninja.map.smsg
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 16 errors, 10 warnings
     Error: Peak virtual memory: 4733 megabytes
-    Error: Processing ended: Thu Apr 20 20:51:30 2023
-    Error: Elapsed time: 00:00:13
-    Error: Total CPU time (on all processors): 00:00:10
+    Error: Processing ended: Thu Apr 20 21:38:35 2023
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:06
 
 
 +------------------------------------------+
